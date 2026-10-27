@@ -52,7 +52,7 @@ src/
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/gsreecharan/react-weather-dashboard.git](https://github.com/gsreecharan/react-weather-dashboard.git)
+   git clone https://github.com/gsreecharan/react-weather-dashboard.git
    cd react-weather-dashboard
    ```
 
