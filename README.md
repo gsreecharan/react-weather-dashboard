@@ -39,3 +39,41 @@ src/
 ├── App.jsx               # Top-level state and API coordination
 ├── index.css             # Layout and responsive styling
 └── main.jsx              # React entry point
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm
+
+### Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/gsreecharan/react-weather-dashboard.git](https://github.com/gsreecharan/react-weather-dashboard.git)
+   cd react-weather-dashboard
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure your API key:
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_WEATHER_API_KEY=your_openweathermap_api_key
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Author
+
+- **G. Sree Charan** — [GitHub](https://github.com/gsreecharan)
