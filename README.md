@@ -1,16 +1,41 @@
-# React + Vite
+# React Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page React application that interfaces with the OpenWeatherMap REST API to display real-time weather metrics, local atmospheric conditions, and forecasts based on user search queries.
 
-Currently, two official plugins are available:
+**Live Deployment:** https://react-weather-dashboard-swart.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application allows users to search for cities globally and retrieve current meteorological data. It handles asynchronous API requests, parses JSON payloads, and conditionally renders components based on network states (loading, success, error).
 
-## Expanding the ESLint configuration
+### Key Features
+- Real-time weather lookup using OpenWeatherMap Current Weather Data API.
+- Displays core metrics: temperature, feels-like temperature, humidity, and wind speed.
+- Dynamic UI changes reflecting weather conditions (clear, cloudy, rainy, snowy).
+- Input validation and defensive error handling for invalid city queries or failed network requests.
+- Fully responsive layout built with custom CSS flexbox/grid.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technical Stack
+
+- **Frontend:** React.js (Hooks: `useState`, `useEffect`)
+- **Styling:** CSS3 (Responsive Design)
+- **Data Source:** OpenWeatherMap API
+- **Deployment:** Vercel
+
+---
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── SearchBox.jsx     # Handles user input and search submissions
+│   ├── WeatherCard.jsx   # Renders temperature, conditions, and icons
+│   └── InfoBox.jsx       # Displays secondary metrics (humidity, wind)
+├── App.jsx               # Top-level state and API coordination
+├── index.css             # Layout and responsive styling
+└── main.jsx              # React entry point
